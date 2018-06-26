@@ -5,7 +5,7 @@
 HTML / CSS Front end assignment.
 
 ### Important Note:
-Created the modal section and hide by CSS.
+Created the modal section and hide it by CSS.
 Did not add the JS interaction for the modal.
 
 ### Technologies Used:
