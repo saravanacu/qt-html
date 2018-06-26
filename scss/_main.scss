@@ -2,14 +2,31 @@
 * {
   box-sizing: border-box;
 }
+//Utility classes
+.text-right {
+  text-align: right;
+}
+.more {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: $font-size-x;
+  color: $dark-text;
+}
 
 body {
   font-family: $font-primary;
-  font-size: 12px;
+  font-size: $font-size-body;
   line-height: 1.2;
   position: relative;
   background-color: $white;
 }
+//Typography
+p {
+  font-size: $font-size-x;
+  margin-bottom: 10px;
+}
+
+//Layout
 .container {
   width: 600px;
   margin: auto;
@@ -75,6 +92,7 @@ article {
     grid-template-columns: 100%;
   }
   .box {
+    font-size: $font-size-x;
     margin-top: 113.5px;
     width: 105px;
     padding: 0 10px;
@@ -101,39 +119,6 @@ article {
       margin-top: 0;
       margin-left: 10px;
       max-width: 50px;
-    }
-  }
-}
-
-// Advertisment Banner
-.ad {
-  &__box {
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    left: 100px;
-    z-index: 10;
-    font-size: 12px;
-    color: $ocean-blue;
-    width: 200px;
-    height: 60px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-bottom: 10px solid $ocean-blue;
-    @include scr-max-767 {
-      font-size: 10px;
-      top: auto;
-      left: 0;
-      bottom: 0;
-      width: 142px;
-      height: 40px;
-      padding: 5px;
-      border-bottom: 5px solid $ocean-blue;
-    }
-    @include scr-max-480 {
-      left: auto;
-      bottom: 20px;
-      right: 0;
     }
   }
 }

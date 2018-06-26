@@ -1,0 +1,60 @@
+//modal
+.modal {
+  &__box {
+    top: 5vh;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    position: absolute;
+    margin: auto;
+    width: 400px;
+    min-height: 260px;
+    background: $white;
+    z-index: 300;
+    @include scr-max-767 {
+      width: 330px;
+      min-height: 260px;
+    }
+    @include scr-max-480 {
+      width: 180px;
+      min-height: 260px;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    @include scr-max-480 {
+      top: 10px;
+      right: 10px;
+    }
+  }
+  &__title {
+    position: relative;
+    padding: 15px 50px 15px 15px;
+    background: $ocean-blue;
+    color: $white;
+    font-size: 13px;
+    font-weight: bold;
+    @include scr-max-480 {
+       padding: 30px 15px 15px 15px;
+    }
+  }
+  &__content {
+    padding: 15px;
+    fontsize: 14px;
+  }
+  &__overlay {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #4a4a4a;
+    opacity: .8;
+    z-index: 200;
+  }
+}
