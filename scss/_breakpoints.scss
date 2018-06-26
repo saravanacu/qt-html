@@ -1,0 +1,53 @@
+// Maximum breakpoint width
+$scr-max-480: 480px;
+$scr-max-767: 767px;
+$scr-max-991: 991px;
+$scr-max-1024: 1024px;
+$scr-max-1200: 1200px;
+
+//media query mixins for max widths
+@mixin scr-max-480 {
+  @media (max-width: #{$scr-max-480}){
+    @content;
+  }
+}
+@mixin scr-max-767 {
+  @media (max-width: #{$scr-max-767}){
+    @content;
+  }
+}
+@mixin scr-max-991 {
+  @media (max-width: #{$scr-max-991}) {
+    @content;
+  }
+}
+@mixin scr-max-1024 {
+  @media (max-width: #{$scr-max-1024}) {
+    @content;
+  }
+}
+@mixin scr-max-1200 {
+  @media (max-width: #{$scr-max-1200}) {
+    @content;
+  }
+}
+
+// tab protrait media query
+@mixin scr-tab-portrait {
+  @media only screen and (max-width: #{$scr-max-991}) and (min-width: #{$scr-min-768}){
+    @content;
+  }
+}
+// tab landscape media query
+@mixin scr-tab-landscape {
+  @media only screen and (max-width: #{$scr-max-1024}) and (min-width: #{$scr-min-992}){
+    @content;
+  }
+}
+
+// Mobile landscape media query
+@mixin scr-mob-portrait {
+  @media only screen and (max-width: #{$scr-max-767}) and (min-width: #{$scr-min-568}){
+    @content;
+  }
+}
