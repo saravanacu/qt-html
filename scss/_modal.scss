@@ -1,5 +1,8 @@
 //modal
 .modal {
+  &__container {
+    display: none;
+  }
   &__box {
     top: 5vh;
     left: 0;

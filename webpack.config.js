@@ -76,12 +76,6 @@ module.exports = {
     // Generate HTMLs
     new HtmlWebpackPlugin(HtmlAttributes.home),
 
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    }),
-
     new ExtractTextPlugin('css/bundle-[hash].css'),
 
     // new SitemapPlugin('http://smartron.com', paths),
